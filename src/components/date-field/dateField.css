@@ -1,0 +1,69 @@
+.date-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date-field__label {
+    font-size: 11px;
+    color: rgb(51, 51, 51);
+}
+
+.date-field__field {
+    width: 100%;
+    padding: 10px 14px;
+    outline: none;
+    border: 1px solid rgb(221, 227, 237);
+    border-radius: 4px;
+    height: 45px;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.date-field__field::-webkit-datetime-edit-text {
+    padding: 0 0.3em;
+}
+
+.date-field__field::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23475569' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+    background-color: transparent;
+}
+
+.date-field__field::-webkit-inner-spin-button ,
+.date-field__field::-webkit-calendar-picker-indicator { 
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+ }
+
+.date-field__field:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 0px 0px 2px rgba(37, 99, 235, 0.35);
+}
+
+.date-field[data-error="true"] .date-field__field {
+    border: 1px solid rgb(255, 72, 66);
+    box-shadow: 0px 0px 0px 2px rgba(255, 72, 66, 0.5);
+}
+
+.date-field[data-error="true"] .date-field__label {
+    color: rgb(255, 72, 66);
+}
+
+.date-field__field:disabled {
+    background-color: #E2E8F0;
+    cursor: not-allowed;
+}

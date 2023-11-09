@@ -1,0 +1,108 @@
+.registration-aside {
+    margin-bottom: 20px;
+}
+
+.registration-aside__card {
+    border: 1px solid #dde3ed;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.registration-aside__title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.registration-aside__title h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.registration-aside__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #dde3ed;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.registration-aside__subtitle svg {
+    color: rgb(28, 100, 242);
+}
+
+.registration-aside__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+.registration-aside__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.registration-aside__label {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration-aside__label svg {
+    color: rgb(28, 100, 242);
+}
+
+.registration-aside__date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.registration-aside__date b {
+    font-weight: 700;
+}
+
+.registration-aside__line {
+    border-bottom: 1px solid #dde3ed;
+    margin: 16px 0;
+}
+
+.registration-aside__price {
+    border: 1px solid #dde3ed;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.registration-aside__price-title {
+    border-bottom: 1px solid #dde3ed;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.registration-aside__amount {
+    text-align: right;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(28, 100, 242);
+}
+
+.registration-aside__amount span {
+    font-size: 16px;
+}
+
+/* .registration-aside__duration {} */
+
+.registration-aside__additional {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    text-wrap: wrap;
+}

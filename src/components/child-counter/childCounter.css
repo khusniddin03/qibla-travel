@@ -1,0 +1,46 @@
+/* .child-counter {} */
+
+.child-counter__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.child-counter__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    pointer-events: visible;
+    padding: 0 12px;
+    outline: none;
+    border: 1px solid rgb(221, 227, 237);
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.child-counter__text {
+    font-size: inherit;
+    white-space: nowrap;
+}
+
+.child-counter__remove-btn {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+/* .child-counter__add-btn {} */

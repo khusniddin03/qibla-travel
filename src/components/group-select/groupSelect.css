@@ -1,0 +1,68 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.select__label {
+    font-size: 11px;
+    color: rgb(51, 51, 51);
+}
+
+.select__wrap {
+    position: relative;
+    width: 100%;
+    height: 45px;
+}
+
+.select__wrap::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23475569' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+    background-color: #fff;
+}
+
+.select__field {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    pointer-events: visible;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid rgb(221, 227, 237);
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.select__field:focus {
+    border-color: #2563EB;
+    box-shadow: 0px 0px 0px 2px rgba(37, 99, 235, 0.35);
+}
+
+.select__field:disabled {
+    background-color: #E2E8F0;
+    cursor: not-allowed;
+}
+
+.select[data-error="true"] .select__field {
+    border: 1px solid rgb(255, 72, 66);
+    box-shadow: 0px 0px 0px 2px rgba(255, 72, 66, .5);
+}
+
+.select[data-error="true"] .select__label {
+    color: rgb(255, 72, 66);
+}

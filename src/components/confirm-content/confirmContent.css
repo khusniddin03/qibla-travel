@@ -1,0 +1,28 @@
+/* .confirm-content {} */
+
+.confirm-content__wrap {
+    height: calc(100vh - 269px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirm-content__title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.confirm-content__btn {
+    width: auto;
+}
+
+.confirm-content__links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 20;
+    font-weight: 400;
+}

@@ -1,0 +1,30 @@
+.footer {
+    padding: 40px 0;
+    background-color: rgb(249, 249, 249);
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .footer__left {} */
+
+/* .footer__right {} */
+
+.footer__title {
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .footer__wrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__title {
+        margin-top: 16px;
+        text-align: center;
+    }
+}

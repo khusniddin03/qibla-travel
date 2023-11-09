@@ -1,0 +1,88 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.select__label {
+    font-size: 11px;
+    color: rgb(51, 51, 51);
+}
+
+.select__wrap {
+    position: relative;
+    width: 100%;
+    height: 45px;
+}
+
+.select__wrap::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23475569' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+
+.select__field {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    pointer-events: visible;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid rgb(221, 227, 237);
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.select__wrap[data-isloading="true"] {
+    cursor: progress;
+}
+
+.select__wrap[data-isloading="true"]::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin:auto;display:block;' width='35px' height='35px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'%3E%3Cg transform='rotate(0 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.9166666666666666s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(30 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.8333333333333334s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(60 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.75s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(90 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.6666666666666666s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(120 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5833333333333334s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(150 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(180 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.4166666666666667s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(210 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.3333333333333333s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(240 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.25s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(270 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.16666666666666666s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(300 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.08333333333333333s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(330 50 50)'%3E%3Crect x='47' y='24' rx='3' ry='6' width='6' height='12' fill='%231c64f2'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='0s' repeatCount='indefinite'%3E%3C/animate%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+    width: 37px;
+    height: 37px;
+    background-color: transparent !important;
+}
+
+.select__wrap[data-isloading="true"] .select__field{
+    pointer-events: none;
+}
+
+.select__field:focus {
+    border-color: #2563EB;
+    box-shadow: 0px 0px 0px 2px rgba(37, 99, 235, 0.35);
+}
+
+.select__field:disabled {
+    background-color: #E2E8F0;
+    cursor: not-allowed;
+}
+
+.select__wrap[data-disabled="true"]::after {
+    background-color: transparent;
+}
+
+.select[data-error="true"] .select__field {
+    border: 1px solid rgb(255, 72, 66);
+    box-shadow: 0px 0px 0px 2px rgba(255, 72, 66, .5);
+}
+
+.select[data-error="true"] .select__label {
+    color: rgb(255, 72, 66);
+}

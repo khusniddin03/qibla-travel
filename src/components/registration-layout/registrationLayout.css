@@ -1,0 +1,14 @@
+/* .registration-layout {} */
+
+.registration-layout__wrap {
+    display: grid;
+    align-items: start;
+    grid-template-columns: calc(100% - 390px) 370px;
+    gap: 20px;    
+}
+
+@media (max-width: 767px) {
+    .registration-layout__wrap {
+        grid-template-columns: 100%;
+    }
+}

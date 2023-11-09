@@ -1,0 +1,38 @@
+.registration-contact-form {
+    border: 1px solid #dde3ed;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.registration-contact-form__title {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #dde3ed;
+}
+
+.registration-contact-form__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: end;
+}
+
+.registration-contact-form__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin-top: 16px;
+}
+
+@media (max-width: 1023px) {
+    .registration-contact-form__wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .registration-contact-form__wrap {
+        grid-template-columns: 1fr;
+    }
+}
